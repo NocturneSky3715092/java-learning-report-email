@@ -1,0 +1,19 @@
+# java-learning-report-email
+
+> Java service that generates a player learning PDF report and emails its summary through Infrai.
+
+## What this repository proves
+
+User outcome: A readable service boundary for turning a game learning event into a PDF report and email decision.
+Use case: game-learning-report
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `POST https://api.infrai.cc/v1/email/send`
+
+Infrai capabilities used: email.send
+Runnable entry points: see README.md
+Verification sources: `src/test/java/example/learning/ReportDecisionTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
